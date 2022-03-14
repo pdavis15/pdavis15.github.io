@@ -1,0 +1,58 @@
+.pageContainer {
+    --bs-bg-opacity: 1;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.homeContainer {
+    padding-left: .5cm;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+.home h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(0, 102, 255); /* The typwriter cursor */
+    border-left: .5em;
+    white-space: nowrap; /* Keeps the content on a single line */
+    /*margin: 0 auto;  Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    white-space: pre;
+    animation: 
+        typing 2.5s steps(11, end),
+        blink-caret .8s step-end infinite;
+    /*width: fit-content;  Make the cursor stop at the end of the line */
+    /*overflow: hidden;  Ensures the content is not revealed until the animation */
+    /*border-right: .15em solid orange;  The typwriter cursor */
+    /*white-space: nowrap;  Keeps the content on a single line */
+    /*margin: 0 auto;  Gives that scrolling effect as the typing happens */
+    /*letter-spacing: .15em;  Adjust as needed */
+    /*animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;*/
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 119, 255); }
+  }

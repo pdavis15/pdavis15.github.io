@@ -1,0 +1,38 @@
+.square {
+    display: grid;
+    place-content: center;
+}
+
+.squareVisited {
+    display: grid;
+    place-content: center;
+    color: aliceblue;
+    background-color: rgb(5, 37, 110);
+}
+
+.squareCurrentPos {
+    display: grid;
+    place-content: center;
+    color: aliceblue;
+    background-color: rgb(5, 37, 110);
+    background-image: url('../images/WhiteQueen.png');
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+}
+
+.squareLegalMove {
+    display: grid;
+    place-content: center;
+    color: aliceblue;
+    background-color: rgb(6, 63, 196);
+}
+
+.squareLegalMove:hover {
+    background-color: rgb(4, 3, 17);
+}
+
+.square .piece {
+    display: grid;
+    place-content: center;
+}
