@@ -1,11 +1,27 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import './index.css';
   
 const NavigationBar = () => {
   return (
+    <nav>
+      <ul id="navigation">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/isolation">Isolation Project</Link>
+        </li>
+      </ul>
+    </nav>
+    /*
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
         <Navbar.Brand href="/">Patrick Davis</Navbar.Brand>
@@ -24,6 +40,7 @@ const NavigationBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    */
   );
 };
   

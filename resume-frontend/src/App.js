@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import NavigationBar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 import About from './pages/about';
 import Projects from './pages/projects';
@@ -12,10 +12,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className='App'>
-        <Router>
+        <Router basename='/'>
           <NavigationBar />
           <Routes>
-            <Route path='/' exact element={<Home />} />
+            <Route exact path='/' exact element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/events' element={<Projects />} />
             <Route path='/annual' element={<Contact />} />
