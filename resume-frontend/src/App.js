@@ -7,6 +7,7 @@ import About from './pages/about';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
 import Isolation from './pages/isolation';
+import Resume from './pages/resume'
 import 'bootstrap/dist/css/bootstrap.min.css';
   
 function App() {
@@ -17,7 +18,7 @@ function App() {
           <Routes>
             <Route exact path='/' exact element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/events' element={<Projects />} />
+            <Route path='/resume' element={<Resume />} />
             <Route path='/annual' element={<Contact />} />
             <Route path='/isolation' element={<Isolation />} />
           </Routes>

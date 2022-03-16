@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import GTLogoSeal_White from '../images/GTLogoSeal_White.png'
-import CCLogo_White from '../images/CCLogo_White.png'
+import CCLogo_White from '../images/CCLogo_1Line_White.png'
 import './about.css'
   
 const About = () => {
@@ -47,7 +47,7 @@ Acquired efficiency, problem solving skills, and productivity through independen
                 <h3><u>Undergraduate:</u></h3>
                 <Row>
                     <Col xs={6} md={4}>
-                        <Image src={CCLogo_White} className='image' alt="GT-Logo"/>
+                        <Image src={CCLogo_White} className='cc_image' alt="GT-Logo"/>
                     </Col>
                     <Col xs={12} md={8}>
                         <p></p>
