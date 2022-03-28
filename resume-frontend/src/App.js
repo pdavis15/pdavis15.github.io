@@ -15,6 +15,12 @@ function App() {
     <div className='App'>
         <Router basename='/'>
           <NavigationBar />
+          <div className='rightSideContainer'>
+            <div className='rightSide'>
+              <p>3 Years Software Experience ... Triple Major ... Secret Level Clearance</p>
+            </div>
+
+          </div>
           <Routes>
             <Route exact path='/' exact element={<Home />} />
             <Route path='/about' element={<About />} />

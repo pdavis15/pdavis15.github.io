@@ -8,22 +8,23 @@ import './index.css';
   
 const NavigationBar = () => {
   return (
-    <nav>
-      <ul id="navigation">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/resume">Resume</Link>
-        </li>
-        <li>
-          <Link to="/isolation">Isolation Project</Link>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <Link to="/">PPPD</Link>
+        <ul id="navigation">
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/resume">Resume</Link>
+          </li>
+          <li>
+            <Link to="/isolation">Isolation Project</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
     /*
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>

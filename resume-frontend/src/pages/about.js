@@ -23,9 +23,15 @@ const About = () => {
         <Container fluid>
             <h1>ABOUT ME</h1>
             <p>
-            Currently a Software Engineer I at Raytheon, while remotely pursuing a masters degree in computer science from the Georgia Institute of Technology. Graduated from Connecticut College, in New London, CT with a Bachelor of Arts Degree in Physics, Mathematics and Computer Science May 2019. 
+            I am a strong C++ Programmer currently working in the Defense Industry, 
+            implementing lower level device interaction and message routing.
+            I have a passion for understanding how objects interact with eachother at a fundumental level. 
+            Whether that be through class design in code, or robots interacting and understanding their enviornment.
 
-Acquired efficiency, problem solving skills, and productivity through independent studies.
+            Currently a Software Engineer I at Raytheon, while remotely pursuing a masters degree in computer science 
+            from the Georgia Institute of Technology. Graduated from Connecticut College, in New London, CT with a 
+            Bachelor of Arts Degree in Physics, Mathematics and Computer Science May 2019. 
+            Acquired efficiency, problem solving skills, and productivity through independent studies.
             </p>
             <h2><u>Education</u></h2>
             <div className='education'>

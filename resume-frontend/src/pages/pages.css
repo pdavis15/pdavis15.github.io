@@ -15,13 +15,69 @@
     max-height: 100%;
 }
 
+p {
+    display: block;
+    padding-top: 20px;
+    margin-block-start: 5em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 5px;
+    max-width: 540px;
+}
+
+@media (max-width: 768px) {
+
+    .rightSideContainer {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .rightSideContainer {
+        left: auto;
+        right: 20px;
+    }
+}
+.rightSideContainer {
+    /* display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative; */
+
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: var(--light-slate);
+    
+}
+.rightSide{
+    margin: 20px auto;
+    padding: 10px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: var(--fz-lg);
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
 .homeContainer {
     padding-left: .5cm;
-    display: inline-block;
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;    
+    display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
-    align-items: center;
-    align-self: center;
-    text-align: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0px;
 }
 .home h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -34,15 +90,6 @@
     animation: 
         typing 2.5s steps(11, end),
         blink-caret .8s step-end infinite;
-    /*width: fit-content;  Make the cursor stop at the end of the line */
-    /*overflow: hidden;  Ensures the content is not revealed until the animation */
-    /*border-right: .15em solid orange;  The typwriter cursor */
-    /*white-space: nowrap;  Keeps the content on a single line */
-    /*margin: 0 auto;  Gives that scrolling effect as the typing happens */
-    /*letter-spacing: .15em;  Adjust as needed */
-    /*animation: 
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;*/
 }
 
 /* The typing effect */
@@ -56,3 +103,36 @@
     from, to { border-color: transparent }
     50% { border-color: rgb(0, 119, 255); }
   }
+
+.smallText{
+    font-size: small;
+    color:rgb(6, 158, 247);
+    text-align: left;
+    justify-content: center;
+    line-height: 1.0;
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+}
+.largeText{
+    font-size: clamp(50px, 9vw, 100px);
+    text-align: left;
+    justify-content: center;
+    line-height: 1.0;
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.medText{
+    font-size: clamp(30px, 6vw, 70px);
+    color:rgb(6, 158, 247);
+    text-align: left;
+    justify-content: center;
+    line-height: 1.0;
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
