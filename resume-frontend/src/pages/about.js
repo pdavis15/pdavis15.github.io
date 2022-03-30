@@ -21,7 +21,7 @@ const About = () => {
         
 
         <Container fluid>
-            <h1>ABOUT ME</h1>
+            <h1>Things I Have Learned</h1>
             <p>
             I am a strong C++ Programmer currently working in the Defense Industry, 
             implementing lower level device interaction and message routing.

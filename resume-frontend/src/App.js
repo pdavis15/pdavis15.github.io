@@ -15,19 +15,21 @@ function App() {
     <div className='App'>
         <Router basename='/'>
           <NavigationBar />
-          <div className='rightSideContainer'>
+          {/* <div className='rightSideContainer'>
             <div className='rightSide'>
               <p>3 Years Software Experience ... Triple Major ... Secret Level Clearance</p>
             </div>
 
+          </div> */}
+          <div className='homeContainer'>
+            <Routes >
+              <Route exact path='/' exact element={<Home />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/resume' element={<Resume />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/isolation' element={<Isolation />} />
+            </Routes>
           </div>
-          <Routes>
-            <Route exact path='/' exact element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/resume' element={<Resume />} />
-            <Route path='/annual' element={<Contact />} />
-            <Route path='/isolation' element={<Isolation />} />
-          </Routes>
         </Router>
     </div>
   );

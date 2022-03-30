@@ -2,15 +2,9 @@ import React from 'react';
   
 const Contact = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
-      <h1>Contact Me</h1>
+    <div>
+      <h1>Hire Me!</h1>
+      <h2>This Page will contain contact info and a button do download resume</h2>
     </div>
   );
 };

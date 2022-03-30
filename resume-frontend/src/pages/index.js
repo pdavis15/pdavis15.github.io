@@ -3,7 +3,7 @@ import './pages.css'
   
 const Home = () => {
   return (
-    <div className='homeContainer'>
+    <div>
       <h1 className='smallText'>
         Hi, my name is 
       </h1>
